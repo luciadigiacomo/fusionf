@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - FUSION F 11</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <figure>
+                    <img src="logofusionf11.jpg.jpg" alt="Logo de FUSION F 11" class="small-image">
+                </figure>
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="agendadeportiva.html">Agenda Deportiva</a></li>
+                <li><a href="ligaprofesionalarg.html">Liga Profesional Argentina</a></li>
+                <li><a href="ligaeuropea.html">Liga Europea</a></li>
+                <li><a href="entrevistas.html">Entrevistas</a></li>
+                <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Agenda Deportiva</h1>
+        </section>
+
+    <div class="filters"></div>
+        <label for="day">Selecciona el día:</label>
+        <select id="day">
+            <option value="">Seleccione un día</option>
+            <option value="lunes">Lunes</option>
+            <option value="martes">Martes</option>
+            <option value="miercoles">Miércoles</option>
+            <option value="jueves">Jueves</option>
+            <option value="viernes">Viernes</option>
+            <option value="sabado">Sábado</option>
+            <option value="domingo">Domingo</option>
+        </select>
+
+        <label for="competition">Selecciona la competición:</label>
+        <select id="competition">
+            <option value="">Seleccione una competición</option>
+            <option value="liga-argentina">Liga Argentina</option>
+            <option value="champions-league">Champions League</option>
+            <option value="libertadores">Copa Libertadores</option>
+        </select>
+    </div>
+
+
+    <table id="match-table">
+        <thead>
+            <tr>
+                <th>Competición</th>
+
+                <th>Partido</th>
+
+                <th>Hora</th>
+                
+                <th>Día</th>
+            </tr>
+        </thead>
+        <tbody id="match-results">
+            
+        </tbody>
+    </table>
+
+    <article class="semifinallibertadores">
+        <h2>Highlights que nos dejó la Fecha 11 de las Eliminatorias Sudamericanas</h2>
+        <video class="center-video" controls width="50%" height="auto" poster="eliminatorias.jpg">
+            <source src="eliminatoriasvideo.mov" type="video/mp4">
+            <source src="eliminatoriasvideo.mov" type="video/ogg">
+            <source src="eliminatoriasvideo.mov" type="video/webm">
+        </video>
+
+    <script src="script.js"></script>
+
+</main>
+    
+</body>
+</html>
